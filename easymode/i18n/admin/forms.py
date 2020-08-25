@@ -1,6 +1,6 @@
 from django.forms.models import ModelFormMetaclass
 from django.forms.utils import ErrorList, ValidationError
-from django.utils.datastructures import SortedDict
+from django.collections import OrderedDict
 from django.utils.translation import get_language
 
 from easymode.i18n.admin.widgets import WidgetWrapper
@@ -24,7 +24,7 @@ class LocalisedForm(object):
         # store language so it can be used later
         self.language = get_language()
         
-        locale_data = initial or SortedDict()
+        locale_data = initial or OrderedDict()
 
         # Set up the initial data for the form
         for localized_field in self.localized_fields:
