@@ -1,4 +1,4 @@
-from django.contrib.contenttypes.generic import BaseGenericInlineFormSet
+from django.contrib.contenttypes.forms import BaseGenericInlineFormSet
 from django.contrib.contenttypes.models import ContentType
 from django.forms.models import save_instance
 
