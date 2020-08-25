@@ -1,5 +1,5 @@
 from django.forms.models import ModelFormMetaclass
-from django.forms.util import ErrorList, ValidationError
+from django.forms.utils import ErrorList, ValidationError
 from django.utils.datastructures import SortedDict
 from django.utils.translation import get_language
 
