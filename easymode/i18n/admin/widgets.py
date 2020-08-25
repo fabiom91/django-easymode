@@ -30,7 +30,7 @@ class WidgetWrapper(RelatedFieldWidgetWrapper):
         else:
             self.widget = widget
         
-        self.is_hidden = self.widget.is_hidden
+        #self.is_hidden = self.widget.is_hidden
         self.needs_multipart_form = self.widget.needs_multipart_form
         self.attrs = self.widget.attrs
         self.choices = getattr(self.widget, 'choices', None)
