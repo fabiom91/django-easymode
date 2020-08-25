@@ -1,6 +1,6 @@
 from django.contrib.admin.options import BaseModelAdmin
 from django.contrib.admin.utils import flatten_fieldsets
-from django.contrib.contenttypes.generic import generic_inlineformset_factory, BaseGenericInlineFormSet
+from django.contrib.contenttypes.fields import generic_inlineformset_factory, BaseGenericInlineFormSet
 from django.db.models.base import ModelBase
 
 from easymode.i18n.admin import forms
