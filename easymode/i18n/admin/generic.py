@@ -1,6 +1,6 @@
 from django.contrib.contenttypes.forms import BaseGenericInlineFormSet
 from django.contrib.contenttypes.models import ContentType
-from django.forms.models import save_instance
+from django.forms import models as mds
 
 
 __all__ = ('LocalizableGenericInlineFormSet',)
@@ -24,4 +24,4 @@ class LocalizableGenericInlineFormSet(BaseGenericInlineFormSet):
         initial_data = dict([(key, cleaned_data[key]) for key  in cleaned_data.keys() if key in dir(self.model)])
         initial_data.update(kwargs)
         new_obj = self.model(**initial_data)
-        return save_instance(form, new_obj, commit=commit)    
+        return mds.save(form, new_obj, commit=commit)    
