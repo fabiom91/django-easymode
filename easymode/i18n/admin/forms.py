@@ -1,6 +1,6 @@
 from django.forms.models import ModelFormMetaclass
 from django.forms.utils import ErrorList, ValidationError
-from django.collections import OrderedDict
+from collections import OrderedDict
 from django.utils.translation import get_language
 
 from easymode.i18n.admin.widgets import WidgetWrapper
